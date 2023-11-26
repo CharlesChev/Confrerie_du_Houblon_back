@@ -22,17 +22,17 @@ public class BiereController {
     @Autowired
     private BiereService biereService;
 
-    @GetMapping("/bieresAdoubadidou")
+    @GetMapping("/bieres")
     public ResponseEntity < List < Biere >> getAllBiere() {
         return ResponseEntity.ok().body(biereService.getAllBiere());
     }
 
-    @GetMapping("/bieres/{id}")
+    @GetMapping("/biere/{id}")
     public ResponseEntity < Biere > getBiereById(@PathVariable long id) {
         return ResponseEntity.ok().body(biereService.getBiereById(id));
     }
 
-    @PostMapping("/bieres")
+    @PostMapping("/biere")
     public ResponseEntity < Biere > createBiere(@RequestBody Biere biere) {
         return ResponseEntity.ok().body(this.biereService.createBiere(biere));
     }
