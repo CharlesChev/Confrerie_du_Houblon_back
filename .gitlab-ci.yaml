@@ -53,7 +53,7 @@ quality_job:
 
 package_job:
   stage: package
-  image: eclipse-temurin:17-jdk-alpine
+  image: eclipse-temurin:21-jdk-alpine
   services:
     - docker:dind
   variables:
