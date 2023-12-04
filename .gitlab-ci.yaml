@@ -18,8 +18,8 @@
 
 stages:          # List of stages for jobs, and their order of execution
   - build
-  - test
-  - deploy
+  - quality
+  
 
 build-job:       # This job runs in the build stage, which runs first.
   stage: build
@@ -32,6 +32,24 @@ build-job:       # This job runs in the build stage, which runs first.
       -DinstallAtEnd=true 
       -DdeployAtEnd=true
     - echo "Compile complete."
+
+quality_job:
+  stage: quality
+  allow_failure: true
+  image: docker:stable
+  services:
+    - docker:dind
+  script:
+    - mkdir codequality-results
+    - docker run
+        --env CODECLIMATE_CODE="$PWD"
+        --volume "$PWD":/code
+        --volume /var/run/docker.sock:/var/run/docker.sock
+        --volume /tmp/cc:/tmp/cc
+        codeclimate/codeclimate analyze -f html > ./codequality-results/index.html
+  artifacts:
+    paths:
+      - codequality-results/
 
 
 
