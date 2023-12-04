@@ -61,6 +61,7 @@ package_job:
   script:
     - apk add --no-cache docker-cli-compose
     - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+    - chmod +x ./confrerie/mvnw
     - ./confrerie/mvnw install -PbuildDocker -DskipTests=true -DpushImage
       -Dhttps.protocols=TLSv1.2
       -Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository
