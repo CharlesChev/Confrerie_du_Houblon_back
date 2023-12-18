@@ -1,0 +1,268 @@
+2023-12-17T16:47:37.257-05:00  INFO 15384 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-17T16:47:37.273-05:00  INFO 15384 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-17T16:47:37.273-05:00 DEBUG 15384 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-12-17T16:47:37.273-05:00 DEBUG 15384 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-12-17T16:47:37.273-05:00 DEBUG 15384 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-12-17T16:47:37.273-05:00 DEBUG 15384 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7ec176da
+2023-12-17T16:47:37.273-05:00 DEBUG 15384 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@62ba3045
+2023-12-17T16:47:37.273-05:00 DEBUG 15384 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-12-17T16:47:37.273-05:00  INFO 15384 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-12-17T16:47:37.288-05:00 DEBUG 15384 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/biere/5", parameters={}
+2023-12-17T16:47:37.295-05:00 DEBUG 15384 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2023-12-17T16:47:37.411-05:00 DEBUG 15384 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.confrerie.confrerie.exception.CustomExceptionHandler#handleRessourceNotFoundException(ResourceNotFoundException)
+2023-12-17T16:47:37.426-05:00 DEBUG 15384 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, application/xml;q=0.9, */*;q=0.8] and supported [text/plain, */*, application/json, application/*+json]
+2023-12-17T16:47:37.426-05:00 DEBUG 15384 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Record not found with id : 5"]
+2023-12-17T16:47:37.426-05:00 DEBUG 15384 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.data.rest.webmvc.ResourceNotFoundException: Record not found with id : 5]
+2023-12-17T16:47:37.426-05:00 DEBUG 15384 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2023-12-17T16:47:56.947-05:00 DEBUG 15384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/bieres", parameters={}
+2023-12-17T16:47:56.953-05:00 DEBUG 15384 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getAllBiere()
+2023-12-17T16:47:57.054-05:00 DEBUG 15384 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+2023-12-17T16:47:57.054-05:00 DEBUG 15384 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[]]
+2023-12-17T16:47:57.069-05:00 DEBUG 15384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-12-17T18:16:00.050-05:00  INFO 8064 --- [main] c.c.confrerie.ConfrerieApplication       : Starting ConfrerieApplication using Java 21.0.1 with PID 8064 (C:\Users\CharlesTravail\projets\projet_pers\confrerie_de_la_biere\back\confrerie\target\classes started by Charles travail in C:\Users\CharlesTravail\projets\projet_pers\confrerie_de_la_biere\back\confrerie)
+2023-12-17T18:16:00.066-05:00  INFO 8064 --- [main] c.c.confrerie.ConfrerieApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-12-17T18:16:01.188-05:00  INFO 8064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17T18:16:01.188-05:00  INFO 8064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-17T18:16:01.235-05:00  INFO 8064 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.confrerie.confrerie.repository.BiereRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-17T18:16:01.235-05:00  INFO 8064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 0 JDBC repository interfaces.
+2023-12-17T18:16:01.251-05:00  INFO 8064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17T18:16:01.251-05:00  INFO 8064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-17T18:16:01.282-05:00  INFO 8064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+2023-12-17T18:16:02.079-05:00  INFO 8064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-17T18:16:02.094-05:00  INFO 8064 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-17T18:16:02.094-05:00  INFO 8064 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-12-17T18:16:02.251-05:00  INFO 8064 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-17T18:16:02.251-05:00  INFO 8064 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2084 ms
+2023-12-17T18:16:02.440-05:00  INFO 8064 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-17T18:16:02.487-05:00  INFO 8064 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-12-17T18:16:02.503-05:00  INFO 8064 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-12-17T18:16:02.799-05:00  INFO 8064 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-17T18:16:02.831-05:00  INFO 8064 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-17T18:16:03.268-05:00  INFO 8064 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77cddc0c
+2023-12-17T18:16:03.284-05:00  INFO 8064 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-17T18:16:04.451-05:00  INFO 8064 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-17T18:16:04.592-05:00  INFO 8064 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17T18:16:04.936-05:00  WARN 8064 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-17T18:16:05.373-05:00 DEBUG 8064 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-12-17T18:16:05.483-05:00 DEBUG 8064 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2023-12-17T18:16:05.514-05:00 DEBUG 8064 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-12-17T18:16:05.530-05:00 DEBUG 8064 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-12-17T18:16:05.561-05:00 DEBUG 8064 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2023-12-17T18:16:05.858-05:00  INFO 8064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-17T18:16:05.858-05:00  INFO 8064 --- [main] c.c.confrerie.ConfrerieApplication       : Started ConfrerieApplication in 6.38 seconds (process running for 7.043)
+2023-12-17T18:33:10.114-05:00  INFO 8064 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17T18:33:10.129-05:00  INFO 8064 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-17T18:33:10.129-05:00  INFO 8064 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-17T18:41:19.778-05:00  INFO 15380 --- [main] c.c.confrerie.ConfrerieApplication       : Starting ConfrerieApplication using Java 21.0.1 with PID 15380 (C:\Users\CharlesTravail\projets\projet_pers\confrerie_de_la_biere\back\confrerie\target\classes started by Charles travail in C:\Users\CharlesTravail\projets\projet_pers\confrerie_de_la_biere\back\confrerie)
+2023-12-17T18:41:19.778-05:00  INFO 15380 --- [main] c.c.confrerie.ConfrerieApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-12-17T18:41:20.911-05:00  INFO 15380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17T18:41:20.911-05:00  INFO 15380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-17T18:41:20.980-05:00  INFO 15380 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.confrerie.confrerie.repository.BiereRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-17T18:41:20.996-05:00  INFO 15380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 0 JDBC repository interfaces.
+2023-12-17T18:41:21.027-05:00  INFO 15380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17T18:41:21.027-05:00  INFO 15380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-17T18:41:21.080-05:00  INFO 15380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interfaces.
+2023-12-17T18:41:21.998-05:00  INFO 15380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-17T18:41:22.014-05:00  INFO 15380 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-17T18:41:22.014-05:00  INFO 15380 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-12-17T18:41:22.161-05:00  INFO 15380 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-17T18:41:22.161-05:00  INFO 15380 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2300 ms
+2023-12-17T18:41:22.415-05:00  INFO 15380 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-17T18:41:22.484-05:00  INFO 15380 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-12-17T18:41:22.484-05:00  INFO 15380 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-12-17T18:41:22.863-05:00  INFO 15380 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-17T18:41:22.901-05:00  INFO 15380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-17T18:41:23.317-05:00  INFO 15380 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27d98bef
+2023-12-17T18:41:23.317-05:00  INFO 15380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-17T18:41:24.636-05:00  INFO 15380 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-17T18:41:25.007-05:00  INFO 15380 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17T18:41:25.669-05:00  WARN 15380 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-17T18:41:26.263-05:00 DEBUG 15380 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-12-17T18:41:26.421-05:00 DEBUG 15380 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2023-12-17T18:41:26.527-05:00 DEBUG 15380 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-12-17T18:41:26.645-05:00 DEBUG 15380 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-12-17T18:41:26.766-05:00 DEBUG 15380 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2023-12-17T18:41:27.654-05:00  INFO 15380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-17T18:41:27.668-05:00  INFO 15380 --- [main] c.c.confrerie.ConfrerieApplication       : Started ConfrerieApplication in 8.566 seconds (process running for 9.046)
+2023-12-17T18:48:57.848-05:00  INFO 15380 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-17T18:48:57.848-05:00  INFO 15380 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-17T18:48:57.848-05:00 DEBUG 15380 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-12-17T18:48:57.848-05:00 DEBUG 15380 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-12-17T18:48:57.848-05:00 DEBUG 15380 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-12-17T18:48:57.863-05:00 DEBUG 15380 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2512155e
+2023-12-17T18:48:57.863-05:00 DEBUG 15380 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@27e656e6
+2023-12-17T18:48:57.863-05:00 DEBUG 15380 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-12-17T18:48:57.863-05:00  INFO 15380 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2023-12-17T18:48:57.879-05:00 DEBUG 15380 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/bi%C3%A8res", parameters={}
+2023-12-17T18:48:57.901-05:00 DEBUG 15380 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-12-17T18:48:57.917-05:00 DEBUG 15380 --- [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-12-17T18:48:57.933-05:00 DEBUG 15380 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-12-17T18:48:57.933-05:00 DEBUG 15380 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-12-17T18:48:57.933-05:00 DEBUG 15380 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-12-17T18:48:57.964-05:00 DEBUG 15380 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2023-12-17T18:48:58.164-05:00 DEBUG 15380 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-12-17T18:49:04.599-05:00 DEBUG 15380 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/bieres", parameters={}
+2023-12-17T18:49:04.599-05:00 DEBUG 15380 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getAllBiere()
+2023-12-17T18:49:04.799-05:00 DEBUG 15380 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+2023-12-17T18:49:04.799-05:00 DEBUG 15380 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.confrerie.confrerie.model.Biere@68ab0afa, com.confrerie.confrerie.model.Biere@3a757794, com.con (truncated)...]
+2023-12-17T18:49:04.837-05:00 DEBUG 15380 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-12-17T18:50:32.664-05:00 DEBUG 15380 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/biere/1", parameters={}
+2023-12-17T18:50:32.714-05:00 DEBUG 15380 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2023-12-17T18:50:32.825-05:00 DEBUG 15380 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.confrerie.confrerie.exception.CustomExceptionHandler#handleRessourceNotFoundException(ResourceNotFoundException)
+2023-12-17T18:50:32.825-05:00 DEBUG 15380 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [text/plain, */*, application/json, application/*+json]
+2023-12-17T18:50:32.833-05:00 DEBUG 15380 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Record not found with id : 1"]
+2023-12-17T18:50:32.835-05:00 DEBUG 15380 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.data.rest.webmvc.ResourceNotFoundException: Record not found with id : 1]
+2023-12-17T18:50:32.835-05:00 DEBUG 15380 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2023-12-17T18:51:19.549-05:00  INFO 15380 --- [http-nio-8080-exec-7] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x8c0x010x000x020x880x030x030xf50xba0x980xde0x8a@0x8f0xbe0xef0x800xf6n0xaat{PT?[0x990xfb0xa740xd7?0xb30x1e0x920xf70xab0xfe- ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:264) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2023-12-17T19:00:09.744-05:00  INFO 15380 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17T19:00:09.744-05:00  INFO 15380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-17T19:00:09.760-05:00  INFO 15380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-17T19:00:21.561-05:00  INFO 11036 --- [main] c.c.confrerie.ConfrerieApplication       : Starting ConfrerieApplication using Java 21.0.1 with PID 11036 (C:\Users\CharlesTravail\projets\projet_pers\confrerie_de_la_biere\back\confrerie\target\classes started by Charles travail in C:\Users\CharlesTravail\projets\projet_pers\confrerie_de_la_biere\back\confrerie)
+2023-12-17T19:00:21.577-05:00  INFO 11036 --- [main] c.c.confrerie.ConfrerieApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-12-17T19:00:22.368-05:00  INFO 11036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17T19:00:22.368-05:00  INFO 11036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-17T19:00:22.400-05:00  INFO 11036 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.confrerie.confrerie.repository.BiereRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-17T19:00:22.415-05:00  INFO 11036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 0 JDBC repository interfaces.
+2023-12-17T19:00:22.422-05:00  INFO 11036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17T19:00:22.422-05:00  INFO 11036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-17T19:00:22.453-05:00  INFO 11036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+2023-12-17T19:00:23.186-05:00  INFO 11036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-17T19:00:23.202-05:00  INFO 11036 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-17T19:00:23.202-05:00  INFO 11036 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-12-17T19:00:23.340-05:00  INFO 11036 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-17T19:00:23.340-05:00  INFO 11036 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1708 ms
+2023-12-17T19:00:23.540-05:00  INFO 11036 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-17T19:00:23.641-05:00  INFO 11036 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-12-17T19:00:23.641-05:00  INFO 11036 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-12-17T19:00:24.026-05:00  INFO 11036 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-17T19:00:24.057-05:00  INFO 11036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-17T19:00:24.474-05:00  INFO 11036 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3611153f
+2023-12-17T19:00:24.474-05:00  INFO 11036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-17T19:00:25.523-05:00  INFO 11036 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-17T19:00:25.576-05:00  INFO 11036 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17T19:00:25.931-05:00  WARN 11036 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-17T19:00:26.479-05:00 DEBUG 11036 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-12-17T19:00:26.610-05:00 DEBUG 11036 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2023-12-17T19:00:26.648-05:00 DEBUG 11036 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-12-17T19:00:26.664-05:00 DEBUG 11036 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-12-17T19:00:26.711-05:00 DEBUG 11036 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2023-12-17T19:00:27.065-05:00  INFO 11036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-17T19:00:27.080-05:00  INFO 11036 --- [main] c.c.confrerie.ConfrerieApplication       : Started ConfrerieApplication in 6.063 seconds (process running for 6.537)
+2023-12-17T19:00:40.861-05:00  INFO 11036 --- [http-nio-8080-exec-2] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x8c0x010x000x020x880x030x0340xff0xc30xcb0xfa0xd70x190xd9e0x9cL'F0x8c0xe5M@0x000x9e30xba0x140x05tt0xa6Z0xcep0xf60xdd0x9b ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:264) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2023-12-17T19:01:34.089-05:00  INFO 11036 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-17T19:01:34.091-05:00  INFO 11036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-17T19:01:34.093-05:00 DEBUG 11036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-12-17T19:01:34.094-05:00 DEBUG 11036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-12-17T19:01:34.095-05:00 DEBUG 11036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-12-17T19:01:34.098-05:00 DEBUG 11036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1fd77205
+2023-12-17T19:01:34.100-05:00 DEBUG 11036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7f7f544a
+2023-12-17T19:01:34.101-05:00 DEBUG 11036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-12-17T19:01:34.102-05:00  INFO 11036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2023-12-17T19:01:34.115-05:00 DEBUG 11036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/biere/17", parameters={}
+2023-12-17T19:01:34.162-05:00 DEBUG 11036 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2023-12-17T19:01:34.400-05:00 DEBUG 11036 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2023-12-17T19:01:34.403-05:00 DEBUG 11036 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@2d69834c]
+2023-12-17T19:01:34.423-05:00 DEBUG 11036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-12-17T19:03:32.669-05:00 DEBUG 11036 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/biere/16", parameters={}
+2023-12-17T19:03:32.671-05:00 DEBUG 11036 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2023-12-17T19:03:32.695-05:00 DEBUG 11036 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2023-12-17T19:03:32.697-05:00 DEBUG 11036 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@59d69650]
+2023-12-17T19:03:32.701-05:00 DEBUG 11036 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-12-17T19:33:07.283-05:00 DEBUG 11036 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/biere/2", parameters={}
+2023-12-17T19:33:07.289-05:00 DEBUG 11036 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2023-12-17T19:33:07.300-05:00 DEBUG 11036 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2023-12-17T19:33:07.312-05:00 DEBUG 11036 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@7eb4368f]
+2023-12-17T19:33:07.319-05:00 DEBUG 11036 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-12-17T19:34:50.461-05:00 DEBUG 11036 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/biere/0", parameters={}
+2023-12-17T19:34:50.514-05:00 DEBUG 11036 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2023-12-17T19:34:50.530-05:00 DEBUG 11036 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2023-12-17T19:34:50.536-05:00 DEBUG 11036 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@4dbf7221]
+2023-12-17T19:34:50.547-05:00 DEBUG 11036 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-12-17T19:34:59.263-05:00 DEBUG 11036 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/biere/7", parameters={}
+2023-12-17T19:34:59.264-05:00 DEBUG 11036 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2023-12-17T19:34:59.273-05:00 DEBUG 11036 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2023-12-17T19:34:59.273-05:00 DEBUG 11036 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@f75141b]
+2023-12-17T19:34:59.278-05:00 DEBUG 11036 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-12-17T19:35:14.349-05:00 DEBUG 11036 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/biere/8", parameters={}
+2023-12-17T19:35:14.352-05:00 DEBUG 11036 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2023-12-17T19:35:14.361-05:00 DEBUG 11036 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2023-12-17T19:35:14.363-05:00 DEBUG 11036 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@30e18692]
+2023-12-17T19:35:14.365-05:00 DEBUG 11036 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-12-17T19:35:48.871-05:00 DEBUG 11036 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/biere/18", parameters={}
+2023-12-17T19:35:48.873-05:00 DEBUG 11036 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2023-12-17T19:35:48.882-05:00 DEBUG 11036 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2023-12-17T19:35:48.883-05:00 DEBUG 11036 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@50e9dba7]
+2023-12-17T19:35:48.886-05:00 DEBUG 11036 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-12-17T19:35:51.845-05:00 DEBUG 11036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/biere/14", parameters={}
+2023-12-17T19:35:51.847-05:00 DEBUG 11036 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2023-12-17T19:35:51.860-05:00 DEBUG 11036 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2023-12-17T19:35:51.861-05:00 DEBUG 11036 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@3b815839]
+2023-12-17T19:35:51.865-05:00 DEBUG 11036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-12-17T19:36:15.873-05:00 DEBUG 11036 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/biere/12", parameters={}
+2023-12-17T19:36:15.877-05:00 DEBUG 11036 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2023-12-17T19:36:15.884-05:00 DEBUG 11036 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2023-12-17T19:36:15.885-05:00 DEBUG 11036 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@15529b90]
+2023-12-17T19:36:15.887-05:00 DEBUG 11036 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-12-17T19:36:18.066-05:00 DEBUG 11036 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/biere/17", parameters={}
+2023-12-17T19:36:18.067-05:00 DEBUG 11036 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2023-12-17T19:36:18.077-05:00 DEBUG 11036 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2023-12-17T19:36:18.077-05:00 DEBUG 11036 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@400b4b3d]
+2023-12-17T19:36:18.079-05:00 DEBUG 11036 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-12-17T19:36:37.071-05:00 DEBUG 11036 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/biere/1", parameters={}
+2023-12-17T19:36:37.076-05:00 DEBUG 11036 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2023-12-17T19:36:37.099-05:00 DEBUG 11036 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.confrerie.confrerie.exception.CustomExceptionHandler#handleRessourceNotFoundException(ResourceNotFoundException)
+2023-12-17T19:36:37.102-05:00 DEBUG 11036 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [text/plain, */*, application/json, application/*+json]
+2023-12-17T19:36:37.103-05:00 DEBUG 11036 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Record not found with id : 1"]
+2023-12-17T19:36:37.105-05:00 DEBUG 11036 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.data.rest.webmvc.ResourceNotFoundException: Record not found with id : 1]
+2023-12-17T19:36:37.113-05:00 DEBUG 11036 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2023-12-17T19:36:39.569-05:00 DEBUG 11036 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/biere/19", parameters={}
+2023-12-17T19:36:39.570-05:00 DEBUG 11036 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2023-12-17T19:36:39.580-05:00 DEBUG 11036 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2023-12-17T19:36:39.581-05:00 DEBUG 11036 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@551892a3]
+2023-12-17T19:36:39.583-05:00 DEBUG 11036 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-12-17T19:45:20.771-05:00 DEBUG 11036 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/biere/0", parameters={}
+2023-12-17T19:45:20.774-05:00 DEBUG 11036 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2023-12-17T19:45:20.781-05:00 DEBUG 11036 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2023-12-17T19:45:20.782-05:00 DEBUG 11036 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@f677cc6]
+2023-12-17T19:45:20.783-05:00 DEBUG 11036 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-12-17T19:45:38.045-05:00 DEBUG 11036 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/biere/2", parameters={}
+2023-12-17T19:45:38.046-05:00 DEBUG 11036 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2023-12-17T19:45:38.052-05:00 DEBUG 11036 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2023-12-17T19:45:38.053-05:00 DEBUG 11036 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@5c0557cc]
+2023-12-17T19:45:38.054-05:00 DEBUG 11036 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-12-17T19:45:43.641-05:00 DEBUG 11036 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/biere/17", parameters={}
+2023-12-17T19:45:43.642-05:00 DEBUG 11036 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2023-12-17T19:45:43.648-05:00 DEBUG 11036 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2023-12-17T19:45:43.648-05:00 DEBUG 11036 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@7835a407]
+2023-12-17T19:45:43.650-05:00 DEBUG 11036 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-12-17T19:48:59.859-05:00  INFO 11036 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17T19:48:59.862-05:00  INFO 11036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-17T19:48:59.869-05:00  INFO 11036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
