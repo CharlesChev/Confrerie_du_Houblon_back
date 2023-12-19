@@ -49,3 +49,54 @@
 2023-12-19T16:32:16.345-05:00  INFO 3656 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-12-19T16:32:16.353-05:00  INFO 3656 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-12-19T16:32:16.399-05:00  INFO 3656 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-19T17:25:04.288-05:00  INFO 7564 --- [main] c.c.confrerie.BiereControllerTests       : Starting BiereControllerTests using Java 21.0.1 with PID 7564 (started by Charles travail in C:\Users\CharlesTravail\projets\projet_pers\confrerie_de_la_biere\back\confrerie)
+2023-12-19T17:25:04.292-05:00  INFO 7564 --- [main] c.c.confrerie.BiereControllerTests       : No active profile set, falling back to 1 default profile: "default"
+2023-12-19T17:25:04.331-05:00 DEBUG 7564 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@74518890
+2023-12-19T17:25:08.183-05:00 DEBUG 7564 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-12-19T17:25:08.432-05:00 DEBUG 7564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2023-12-19T17:25:08.481-05:00 DEBUG 7564 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-12-19T17:25:08.561-05:00 DEBUG 7564 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-12-19T17:25:08.807-05:00  INFO 7564 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-19T17:25:08.807-05:00  INFO 7564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-19T17:25:08.810-05:00  INFO 7564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2023-12-19T17:25:08.865-05:00  INFO 7564 --- [main] c.c.confrerie.BiereControllerTests       : Started BiereControllerTests in 5.23 seconds (process running for 7.051)
+2023-12-19T17:25:09.098-05:00 DEBUG 7564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2023-12-19T17:25:09.232-05:00 DEBUG 7564 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-12-19T17:25:09.239-05:00 DEBUG 7564 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@73b0ed03]
+2023-12-19T17:25:09.454-05:00 DEBUG 7564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getAllBiere()
+2023-12-19T17:25:09.463-05:00 DEBUG 7564 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-12-19T17:25:09.464-05:00 DEBUG 7564 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.confrerie.confrerie.model.Biere@279c4e3b, com.confrerie.confrerie.model.Biere@334b392d, com.con (truncated)...]
+2023-12-19T17:25:09.532-05:00  INFO 7564 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.confrerie.confrerie.ConfrerieApplicationTests]: ConfrerieApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-12-19T17:25:09.544-05:00  INFO 7564 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.confrerie.confrerie.ConfrerieApplication for test class com.confrerie.confrerie.ConfrerieApplicationTests
+2023-12-19T17:25:09.673-05:00  INFO 7564 --- [main] c.c.confrerie.ConfrerieApplicationTests  : Starting ConfrerieApplicationTests using Java 21.0.1 with PID 7564 (started by Charles travail in C:\Users\CharlesTravail\projets\projet_pers\confrerie_de_la_biere\back\confrerie)
+2023-12-19T17:25:09.674-05:00  INFO 7564 --- [main] c.c.confrerie.ConfrerieApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2023-12-19T17:25:09.686-05:00 DEBUG 7564 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7079f8f0
+2023-12-19T17:25:10.916-05:00  INFO 7564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-19T17:25:10.920-05:00  INFO 7564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-19T17:25:10.972-05:00  INFO 7564 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.confrerie.confrerie.repository.BiereRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-19T17:25:10.974-05:00  INFO 7564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 0 JDBC repository interfaces.
+2023-12-19T17:25:10.995-05:00  INFO 7564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-19T17:25:11.001-05:00  INFO 7564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-19T17:25:11.064-05:00  INFO 7564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+2023-12-19T17:25:11.848-05:00  INFO 7564 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-19T17:25:11.996-05:00  INFO 7564 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-12-19T17:25:12.000-05:00  INFO 7564 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-12-19T17:25:12.337-05:00  INFO 7564 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-19T17:25:12.379-05:00  INFO 7564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-19T17:25:13.027-05:00  INFO 7564 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@169d5567
+2023-12-19T17:25:13.032-05:00  INFO 7564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-19T17:25:14.204-05:00  INFO 7564 --- [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.confrerie.confrerie.model.Biere (class must be instantiated by Interceptor)
+2023-12-19T17:25:14.501-05:00  INFO 7564 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-19T17:25:14.572-05:00  INFO 7564 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-19T17:25:15.241-05:00  WARN 7564 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-19T17:25:15.944-05:00 DEBUG 7564 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-12-19T17:25:15.992-05:00 DEBUG 7564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2023-12-19T17:25:16.034-05:00 DEBUG 7564 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-12-19T17:25:16.061-05:00 DEBUG 7564 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-12-19T17:25:16.150-05:00 DEBUG 7564 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2023-12-19T17:25:16.583-05:00  INFO 7564 --- [main] c.c.confrerie.ConfrerieApplicationTests  : Started ConfrerieApplicationTests in 7.021 seconds (process running for 14.769)
+2023-12-19T17:25:16.675-05:00 DEBUG 7564 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@74518890, started on Tue Dec 19 17:25:04 EST 2023
+2023-12-19T17:25:16.680-05:00 DEBUG 7564 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7079f8f0, started on Tue Dec 19 17:25:09 EST 2023
+2023-12-19T17:25:16.683-05:00  INFO 7564 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-19T17:25:16.688-05:00  INFO 7564 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-19T17:25:16.708-05:00  INFO 7564 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
