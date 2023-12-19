@@ -38,6 +38,7 @@ test_job:
   stage: test
   image: eclipse-temurin:21-jdk-alpine
   script:
+    - chmod +x ./confrerie/mvnw
     - ./confrerie/mvnw test
       -Dhttps.protocols=TLSv1.2
       -Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository
