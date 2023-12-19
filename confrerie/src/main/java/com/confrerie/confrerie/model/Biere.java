@@ -95,4 +95,14 @@ public class Biere {
         this.photo = photo;
     }
 
+    public Biere(String nom, String type, String pay, String brasserie, String gouteur, String description, String photo) {
+        this.nom = nom;
+        this.type = type;
+        this.pay = pay;
+        this.brasserie = brasserie;
+        this.gouteur = gouteur;
+        this.description = description;
+        this.photo = photo;
+    }
+
 }

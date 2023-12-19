@@ -1,5 +1,6 @@
 package com.confrerie.confrerie.controller;
 
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,18 +35,18 @@ public class BiereController {
         return ResponseEntity.ok().body(biereService.getBiereById(id));
     }
 
-    @PostMapping("/biere")
+    @PostMapping("add/biere")
     public ResponseEntity < Biere > createBiere(@RequestBody Biere biere) {
         return ResponseEntity.ok().body(this.biereService.createBiere(biere));
     }
 
-    @PutMapping("/bieres/{id}")
+    @PutMapping("modify/biere/{id}")
     public ResponseEntity < Biere > updateBiere(@PathVariable long id, @RequestBody Biere biere) {
         biere.setId(id);
         return ResponseEntity.ok().body(this.biereService.updateBiere(biere));
     }
 
-    @DeleteMapping("/bieres/{id}")
+    @DeleteMapping("delete/biere/{id}")
     public HttpStatus deleteBiere(@PathVariable long id) {
         this.biereService.deleteBiere(id);
         return HttpStatus.OK;
