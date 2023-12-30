@@ -543,3 +543,56 @@
 2023-12-30T16:23:54.231-05:00 DEBUG 16504 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
 2023-12-30T16:23:54.231-05:00 DEBUG 16504 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.confrerie.confrerie.model.Biere@3ae95293, com.confrerie.confrerie.model.Biere@100e91b2, com.con (truncated)...]
 2023-12-30T16:23:54.231-05:00 DEBUG 16504 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-12-30T16:43:17.105-05:00  INFO 16504 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-30T16:43:17.149-05:00  INFO 16504 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-30T16:43:17.164-05:00  INFO 16504 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-30T16:43:31.184-05:00  INFO 18180 --- [main] c.c.confrerie.ConfrerieApplication       : Starting ConfrerieApplication using Java 21.0.1 with PID 18180 (C:\Users\CharlesTravail\projets\projet_pers\confrerie_de_la_biere\back\confrerie\target\classes started by Charles travail in C:\Users\CharlesTravail\projets\projet_pers\confrerie_de_la_biere\back\confrerie)
+2023-12-30T16:43:31.190-05:00  INFO 18180 --- [main] c.c.confrerie.ConfrerieApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-12-30T16:43:32.100-05:00  INFO 18180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-30T16:43:32.103-05:00  INFO 18180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-30T16:43:32.149-05:00  INFO 18180 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.confrerie.confrerie.repository.BiereRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-30T16:43:32.151-05:00  INFO 18180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 0 JDBC repository interfaces.
+2023-12-30T16:43:32.165-05:00  INFO 18180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-30T16:43:32.167-05:00  INFO 18180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-30T16:43:32.201-05:00  INFO 18180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interfaces.
+2023-12-30T16:43:33.052-05:00  INFO 18180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-30T16:43:33.068-05:00  INFO 18180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-30T16:43:33.069-05:00  INFO 18180 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-12-30T16:43:33.221-05:00  INFO 18180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-30T16:43:33.223-05:00  INFO 18180 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1958 ms
+2023-12-30T16:43:33.464-05:00  INFO 18180 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-30T16:43:33.557-05:00  INFO 18180 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-12-30T16:43:33.564-05:00  INFO 18180 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-12-30T16:43:34.040-05:00  INFO 18180 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-30T16:43:34.088-05:00  INFO 18180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-30T16:43:34.660-05:00  INFO 18180 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@274bae2c
+2023-12-30T16:43:34.663-05:00  INFO 18180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-30T16:43:35.898-05:00  INFO 18180 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-30T16:43:36.003-05:00  INFO 18180 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-30T16:43:36.389-05:00  WARN 18180 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-30T16:43:36.874-05:00 DEBUG 18180 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-12-30T16:43:36.983-05:00 DEBUG 18180 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2023-12-30T16:43:37.011-05:00 DEBUG 18180 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-12-30T16:43:37.024-05:00 DEBUG 18180 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-12-30T16:43:37.068-05:00 DEBUG 18180 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2023-12-30T16:43:37.366-05:00  INFO 18180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-30T16:43:37.377-05:00  INFO 18180 --- [main] c.c.confrerie.ConfrerieApplication       : Started ConfrerieApplication in 6.807 seconds (process running for 7.366)
+2023-12-30T16:43:51.131-05:00  INFO 18180 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-30T16:43:51.133-05:00  INFO 18180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-30T16:43:51.136-05:00 DEBUG 18180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-12-30T16:43:51.138-05:00 DEBUG 18180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-12-30T16:43:51.141-05:00 DEBUG 18180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-12-30T16:43:51.152-05:00 DEBUG 18180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5b4ce00
+2023-12-30T16:43:51.155-05:00 DEBUG 18180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7f9b851c
+2023-12-30T16:43:51.158-05:00 DEBUG 18180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-12-30T16:43:51.158-05:00  INFO 18180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2023-12-30T16:43:51.175-05:00 DEBUG 18180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/bieres", parameters={}
+2023-12-30T16:43:51.196-05:00 DEBUG 18180 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getAllBiere()
+2023-12-30T16:43:51.451-05:00 DEBUG 18180 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2023-12-30T16:43:51.453-05:00 DEBUG 18180 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.confrerie.confrerie.model.Biere@26b912a4, com.confrerie.confrerie.model.Biere@60554bf7, com.con (truncated)...]
+2023-12-30T16:43:51.515-05:00 DEBUG 18180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-12-30T16:44:22.373-05:00 DEBUG 18180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/bieres", parameters={}
+2023-12-30T16:44:22.380-05:00 DEBUG 18180 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getAllBiere()
+2023-12-30T16:44:22.413-05:00 DEBUG 18180 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2023-12-30T16:44:22.447-05:00 DEBUG 18180 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.confrerie.confrerie.model.Biere@43c212d4, com.confrerie.confrerie.model.Biere@770b947e, com.con (truncated)...]
+2023-12-30T16:44:22.453-05:00 DEBUG 18180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
