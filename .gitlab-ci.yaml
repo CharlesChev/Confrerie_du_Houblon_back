@@ -26,7 +26,7 @@ build-job:       # This job runs in the build stage, which runs first.
   stage: build
   image: eclipse-temurin:21-jdk-alpine
   script:
-    - echo "Compiling the code..."
+    - echo "Compiling the code...//////////////////////////////////////////////////////////////////"
     - chmod +x ./confrerie/mvnw
     - ./confrerie/mvnw -f ./confrerie/pom.xml compile
       -Djava.awt.headless=true
@@ -38,6 +38,7 @@ test_job:
   stage: test
   image: eclipse-temurin:21-jdk-alpine
   script:
+    - echo "testing the code...//////////////////////////////////////////////////////////////////"
     - chmod +x ./confrerie/mvnw
     - ./confrerie/mvnw -f ./confrerie/pom.xml test
       -Dhttps.protocols=TLSv1.2
@@ -46,6 +47,7 @@ test_job:
       -Dorg.slf4j.simpleLogger.showDateTime=true
       -Djava.awt.headless=true
       --batch-mode --errors --fail-at-end --show-version -DinstallAtEnd=true -DdeployAtEnd=true
+    - echo "fin des tests...//////////////////////////////////////////////////////////////////"
 
 quality_job:
   stage: quality

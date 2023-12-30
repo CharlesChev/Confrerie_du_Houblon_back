@@ -16,6 +16,12 @@ public class Biere {
     @Column(name = "type")
     private String type;
 
+    @Column(name = "lng")
+    private Float lng;
+
+    @Column(name = "lat")
+    private Float lat;
+
     @Column(name = "pay")
     private String pay;
 
@@ -30,6 +36,22 @@ public class Biere {
 
     @Column(name = "photo")
     private String photo;
+
+    public Float getLng() {
+        return this.lng;
+    }
+
+    public void setLng(Float lng) {
+        this.lng = lng;
+    }
+
+    public Float getLat() {
+        return this.lat;
+    }
+
+    public void setLat(Float lat) {
+        this.lat = lat;
+    }
 
     public long getId() {
         return this.id;
@@ -95,14 +117,17 @@ public class Biere {
         this.photo = photo;
     }
 
-    public Biere(String nom, String type, String pay, String brasserie, String gouteur, String description, String photo) {
+    public Biere() {}
+
+    public Biere(String nom, String type, Float lng, Float lat, String pay, String brasserie, String gouteur, String description, String photo) {
         this.nom = nom;
         this.type = type;
+        this.lng = lng;
+        this.lat = lat;
         this.pay = pay;
         this.brasserie = brasserie;
         this.gouteur = gouteur;
         this.description = description;
         this.photo = photo;
     }
-
 }

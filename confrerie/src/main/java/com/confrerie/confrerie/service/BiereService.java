@@ -29,6 +29,8 @@ public class BiereService {
             biereUpdate.setId(biere.getId());
             biereUpdate.setNom(biere.getNom());
             biereUpdate.setType(biere.getType());
+            biereUpdate.setLng(biere.getLng());
+            biereUpdate.setLat(biere.getLat());
             biereUpdate.setPay(biere.getPay());
             biereUpdate.setBrasserie(biere.getBrasserie());
             biereUpdate.setGouteur(biere.getGouteur());
