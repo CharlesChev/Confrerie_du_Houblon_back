@@ -35,18 +35,18 @@ public class BiereController {
         return ResponseEntity.ok().body(biereService.getBiereById(id));
     }
 
-    @PostMapping("add/biere")
+    @PostMapping("/add/biere")
     public ResponseEntity < Biere > createBiere(@RequestBody Biere biere) {
         return ResponseEntity.ok().body(this.biereService.createBiere(biere));
     }
 
-    @PutMapping("modify/biere/{id}")
+    @PutMapping("/modify/biere/{id}")
     public ResponseEntity < Biere > updateBiere(@PathVariable long id, @RequestBody Biere biere) {
         biere.setId(id);
         return ResponseEntity.ok().body(this.biereService.updateBiere(biere));
     }
 
-    @DeleteMapping("delete/biere/{id}")
+    @DeleteMapping("/delete/biere/{id}")
     public HttpStatus deleteBiere(@PathVariable long id) {
         this.biereService.deleteBiere(id);
         return HttpStatus.OK;
@@ -55,3 +55,11 @@ public class BiereController {
     
     
 }
+
+
+
+
+
+
+
+
