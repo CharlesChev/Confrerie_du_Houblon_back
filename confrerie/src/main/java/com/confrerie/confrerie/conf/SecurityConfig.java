@@ -24,7 +24,7 @@ public class SecurityConfig {
                 .requestMatchers("/biere/**").permitAll()
                 .requestMatchers("/delete/biere/**").hasRole("ADMIN")
                 .requestMatchers("/**").hasRole("ADMIN")
-                .anyRequest().authenticated()).httpBasic(Customizer.withDefaults())
+                .anyRequest().authenticated()).httpBasic(Customizer.withDefaults()).cors(Customizer.withDefaults())
                 .logout(logout -> logout
                         .permitAll()).csrf(AbstractHttpConfigurer::disable);
         return http.build();
@@ -34,11 +34,13 @@ public class SecurityConfig {
 	public UserDetailsService userDetailsService() {
 		UserDetails user =
 			 User.withDefaultPasswordEncoder()
-				.username("admin")
-				.password("password")
+				.username("Confrere")
+				.password("Labiere786,")
 				.roles("ADMIN")
 				.build();
 
 		return new InMemoryUserDetailsManager(user);
 	}
 }
+
+

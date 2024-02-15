@@ -1,4 +1,4 @@
-package com.confrerie.confrerie.controller;
+ package com.confrerie.confrerie.controller;
 
 
 import java.util.List;
@@ -50,10 +50,7 @@ public class BiereController {
     public HttpStatus deleteBiere(@PathVariable long id) {
         this.biereService.deleteBiere(id);
         return HttpStatus.OK;
-    }
-
-    
-    
+    }  
 }
 
 

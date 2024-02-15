@@ -1,279 +1,68 @@
-2024-01-18T13:50:13.723-05:00  INFO 10152 --- [main] c.c.confrerie.ConfrerieApplication       : Starting ConfrerieApplication using Java 21.0.1 with PID 10152 (C:\Users\CharlesTravail\projets\projet_pers\confrerie_de_la_biere\back\confrerie\target\classes started by Charles travail in C:\Users\CharlesTravail\projets\projet_pers\confrerie_de_la_biere\back\confrerie)
-2024-01-18T13:50:13.739-05:00  INFO 10152 --- [main] c.c.confrerie.ConfrerieApplication       : No active profile set, falling back to 1 default profile: "default"
-2024-01-18T13:50:14.754-05:00  INFO 10152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2024-01-18T13:50:14.754-05:00  INFO 10152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-01-18T13:50:14.801-05:00  INFO 10152 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.confrerie.confrerie.repository.BiereRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2024-01-18T13:50:14.817-05:00  INFO 10152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 0 JDBC repository interfaces.
-2024-01-18T13:50:14.817-05:00  INFO 10152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2024-01-18T13:50:14.832-05:00  INFO 10152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-18T13:50:14.863-05:00  INFO 10152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interfaces.
-2024-01-18T13:50:15.785-05:00  INFO 10152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-01-18T13:50:15.801-05:00  INFO 10152 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-01-18T13:50:15.801-05:00  INFO 10152 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
-2024-01-18T13:50:15.989-05:00  INFO 10152 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-01-18T13:50:15.989-05:00  INFO 10152 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2158 ms
-2024-01-18T13:50:16.207-05:00  INFO 10152 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-18T13:50:16.301-05:00  INFO 10152 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
-2024-01-18T13:50:16.317-05:00  INFO 10152 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2024-01-18T13:50:16.707-05:00  INFO 10152 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-18T13:50:16.739-05:00  INFO 10152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-18T13:50:17.317-05:00  INFO 10152 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15186ce0
-2024-01-18T13:50:17.332-05:00  INFO 10152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-18T13:50:18.557-05:00  INFO 10152 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-18T13:50:18.620-05:00  INFO 10152 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-18T13:50:19.042-05:00  WARN 10152 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-18T13:50:19.151-05:00  WARN 10152 --- [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
-2024-01-18T13:50:19.651-05:00 TRACE 10152 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+2024-02-12T09:45:12.575+01:00  INFO 812 --- [main] c.c.confrerie.ConfrerieApplication       : Starting ConfrerieApplication using Java 21.0.1 with PID 812 (C:\Users\CharlesTravail\projets\projet_pers\confrerie_de_la_biere\back\confrerie\target\classes started by Charles travail in C:\Users\CharlesTravail\projets\projet_pers\confrerie_de_la_biere\back\confrerie)
+2024-02-12T09:45:12.595+01:00  INFO 812 --- [main] c.c.confrerie.ConfrerieApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-02-12T09:45:14.391+01:00  INFO 812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-12T09:45:14.391+01:00  INFO 812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-02-12T09:45:14.469+01:00  INFO 812 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.confrerie.confrerie.repository.BiereRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-02-12T09:45:14.469+01:00  INFO 812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 0 JDBC repository interfaces.
+2024-02-12T09:45:14.485+01:00  INFO 812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-12T09:45:14.500+01:00  INFO 812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-12T09:45:14.547+01:00  INFO 812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2024-02-12T09:45:15.969+01:00  INFO 812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-02-12T09:45:16.000+01:00  INFO 812 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-12T09:45:16.000+01:00  INFO 812 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-02-12T09:45:16.281+01:00  INFO 812 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-12T09:45:16.281+01:00  INFO 812 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3558 ms
+2024-02-12T09:45:16.703+01:00  INFO 812 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-12T09:45:16.907+01:00  INFO 812 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-02-12T09:45:16.907+01:00  INFO 812 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-12T09:45:17.531+01:00  INFO 812 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-12T09:45:17.594+01:00  INFO 812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-12T09:45:18.813+01:00  INFO 812 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@194911c1
+2024-02-12T09:45:18.813+01:00  INFO 812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-12T09:45:21.996+01:00  INFO 812 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-12T09:45:22.163+01:00  INFO 812 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-12T09:45:23.005+01:00  WARN 812 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-12T09:45:23.214+01:00  WARN 812 --- [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2024-02-12T09:45:23.841+01:00 TRACE 812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
 	c.c.c.c.BiereController:
-	{DELETE [/delete/biere/{id}]}: deleteBiere(long)
 	{GET [/biere/{id}]}: getBiereById(long)
-	{PUT [/modify/biere/{id}]}: updateBiere(long,Biere)
+	{DELETE [/delete/biere/{id}]}: deleteBiere(long)
 	{GET [/bieres]}: getAllBiere()
+	{PUT [/modify/biere/{id}]}: updateBiere(long,Biere)
 	{POST [/add/biere]}: createBiere(Biere)
-2024-01-18T13:50:19.667-05:00 TRACE 10152 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+2024-02-12T09:45:23.850+01:00 TRACE 812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
 	o.s.b.a.w.s.e.BasicErrorController:
 	{ [/error]}: error(HttpServletRequest)
 	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
-2024-01-18T13:50:19.667-05:00 DEBUG 10152 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
-2024-01-18T13:50:19.683-05:00 DEBUG 10152 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
-2024-01-18T13:50:19.792-05:00 TRACE 10152 --- [main] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'routerFunctionMapping'
-2024-01-18T13:50:19.808-05:00 TRACE 10152 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
-2024-01-18T13:50:19.808-05:00 TRACE 10152 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2024-01-18T13:50:19.808-05:00 DEBUG 10152 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-01-18T13:50:19.886-05:00  INFO 10152 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3c130cb2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73502d5e, org.springframework.security.web.context.SecurityContextHolderFilter@1ced1d14, org.springframework.security.web.header.HeaderWriterFilter@21b3d356, org.springframework.security.web.authentication.logout.LogoutFilter@59301546, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5263f554, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3dfaa1e4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@471d6571, org.springframework.security.web.access.ExceptionTranslationFilter@21e15093, org.springframework.security.web.access.intercept.AuthorizationFilter@7866ffa]
-2024-01-18T13:50:19.964-05:00 DEBUG 10152 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-01-18T13:50:20.026-05:00 DEBUG 10152 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-01-18T13:50:20.073-05:00 DEBUG 10152 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
-2024-01-18T13:50:20.323-05:00  INFO 10152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-01-18T13:50:20.339-05:00  INFO 10152 --- [main] c.c.confrerie.ConfrerieApplication       : Started ConfrerieApplication in 7.272 seconds (process running for 7.884)
-2024-01-18T13:52:05.762-05:00  INFO 10152 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-18T13:52:05.766-05:00  INFO 10152 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-01-18T13:52:05.768-05:00 TRACE 10152 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@16422f27
-2024-01-18T13:52:05.769-05:00 TRACE 10152 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@17d837ab
-2024-01-18T13:52:05.772-05:00 TRACE 10152 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.theme.FixedThemeResolver@51d41b97
-2024-01-18T13:52:05.776-05:00 TRACE 10152 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected DefaultRequestToViewNameTranslator
-2024-01-18T13:52:05.778-05:00 TRACE 10152 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected SessionFlashMapManager
-2024-01-18T13:52:05.780-05:00 DEBUG 10152 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2024-01-18T13:52:05.781-05:00  INFO 10152 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
-2024-01-18T13:52:05.861-05:00 TRACE 10152 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T13:52:05.903-05:00 TRACE 10152 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T13:52:05.940-05:00 TRACE 10152 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T13:52:06.019-05:00 TRACE 10152 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T13:52:06.031-05:00 TRACE 10152 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T13:52:06.063-05:00 TRACE 10152 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T13:52:06.074-05:00 TRACE 10152 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T13:52:06.114-05:00 TRACE 10152 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T13:52:06.131-05:00 TRACE 10152 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T13:52:06.144-05:00 TRACE 10152 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T13:52:06.154-05:00 TRACE 10152 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:00:39.573-05:00  INFO 10152 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-18T14:00:39.573-05:00  INFO 10152 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-18T14:00:39.589-05:00  INFO 10152 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-18T14:00:53.798-05:00  INFO 5980 --- [main] c.c.confrerie.ConfrerieApplication       : Starting ConfrerieApplication using Java 21.0.1 with PID 5980 (C:\Users\CharlesTravail\projets\projet_pers\confrerie_de_la_biere\back\confrerie\target\classes started by Charles travail in C:\Users\CharlesTravail\projets\projet_pers\confrerie_de_la_biere\back\confrerie)
-2024-01-18T14:00:53.798-05:00  INFO 5980 --- [main] c.c.confrerie.ConfrerieApplication       : No active profile set, falling back to 1 default profile: "default"
-2024-01-18T14:00:54.657-05:00  INFO 5980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2024-01-18T14:00:54.673-05:00  INFO 5980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-01-18T14:00:54.695-05:00  INFO 5980 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.confrerie.confrerie.repository.BiereRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2024-01-18T14:00:54.711-05:00  INFO 5980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 0 JDBC repository interfaces.
-2024-01-18T14:00:54.711-05:00  INFO 5980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2024-01-18T14:00:54.711-05:00  INFO 5980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-18T14:00:54.758-05:00  INFO 5980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
-2024-01-18T14:00:55.544-05:00  INFO 5980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-01-18T14:00:55.560-05:00  INFO 5980 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-01-18T14:00:55.560-05:00  INFO 5980 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
-2024-01-18T14:00:55.714-05:00  INFO 5980 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-01-18T14:00:55.714-05:00  INFO 5980 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1831 ms
-2024-01-18T14:00:55.914-05:00  INFO 5980 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-18T14:00:55.999-05:00  INFO 5980 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
-2024-01-18T14:00:55.999-05:00  INFO 5980 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2024-01-18T14:00:56.299-05:00  INFO 5980 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-18T14:00:56.331-05:00  INFO 5980 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-18T14:00:56.932-05:00  INFO 5980 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c8b10b4
-2024-01-18T14:00:56.932-05:00  INFO 5980 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-18T14:00:58.019-05:00  INFO 5980 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-18T14:00:58.066-05:00  INFO 5980 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-18T14:00:58.435-05:00  WARN 5980 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-18T14:00:58.536-05:00  WARN 5980 --- [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
-2024-01-18T14:00:58.984-05:00 TRACE 5980 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
-	c.c.c.c.BiereController:
-	{DELETE [/delete/biere/{id}]}: deleteBiere(long)
-	{PUT [/modify/biere/{id}]}: updateBiere(long,Biere)
-	{GET [/bieres]}: getAllBiere()
-	{POST [/add/biere]}: createBiere(Biere)
-	{GET [/biere/{id}]}: getBiereById(long)
-2024-01-18T14:00:58.990-05:00 TRACE 5980 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
-	o.s.b.a.w.s.e.BasicErrorController:
-	{ [/error]}: error(HttpServletRequest)
-	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
-2024-01-18T14:00:58.990-05:00 DEBUG 5980 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
-2024-01-18T14:00:59.006-05:00 DEBUG 5980 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
-2024-01-18T14:00:59.106-05:00 TRACE 5980 --- [main] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'routerFunctionMapping'
-2024-01-18T14:00:59.122-05:00 TRACE 5980 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
-2024-01-18T14:00:59.122-05:00 TRACE 5980 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2024-01-18T14:00:59.122-05:00 DEBUG 5980 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-01-18T14:00:59.206-05:00  INFO 5980 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3705a85c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2284058a, org.springframework.security.web.context.SecurityContextHolderFilter@5263f554, org.springframework.security.web.header.HeaderWriterFilter@285ac29, org.springframework.security.web.authentication.logout.LogoutFilter@40f77135, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5345552f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@95958d9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44cab872, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b11d0d8, org.springframework.security.web.access.ExceptionTranslationFilter@21b3d356, org.springframework.security.web.access.intercept.AuthorizationFilter@471d6571]
-2024-01-18T14:00:59.291-05:00 DEBUG 5980 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-01-18T14:00:59.338-05:00 DEBUG 5980 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-01-18T14:00:59.385-05:00 DEBUG 5980 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
-2024-01-18T14:00:59.607-05:00  INFO 5980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-01-18T14:00:59.623-05:00  INFO 5980 --- [main] c.c.confrerie.ConfrerieApplication       : Started ConfrerieApplication in 6.375 seconds (process running for 6.86)
-2024-01-18T14:01:45.667-05:00  INFO 5980 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-18T14:01:45.668-05:00  INFO 5980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-01-18T14:01:45.670-05:00 TRACE 5980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@579cfcc4
-2024-01-18T14:01:45.670-05:00 TRACE 5980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@22195d06
-2024-01-18T14:01:45.671-05:00 TRACE 5980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.theme.FixedThemeResolver@4cc4f6bd
-2024-01-18T14:01:45.673-05:00 TRACE 5980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected DefaultRequestToViewNameTranslator
-2024-01-18T14:01:45.674-05:00 TRACE 5980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected SessionFlashMapManager
-2024-01-18T14:01:45.675-05:00 DEBUG 5980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2024-01-18T14:01:45.675-05:00  INFO 5980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2024-01-18T14:01:46.075-05:00 TRACE 5980 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:01:46.077-05:00 TRACE 5980 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:01:46.078-05:00 TRACE 5980 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:01:46.083-05:00 TRACE 5980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : DELETE "/delete/biere/4", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
-2024-01-18T14:01:46.085-05:00 TRACE 5980 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:01:46.103-05:00 TRACE 5980 --- [http-nio-8080-exec-2] o.s.web.method.HandlerMethod             : Arguments: [4]
-2024-01-18T14:01:46.285-05:00 DEBUG 5980 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-01-18T14:01:46.287-05:00 TRACE 5980 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [200 OK]
-2024-01-18T14:01:46.303-05:00 TRACE 5980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
-2024-01-18T14:01:46.306-05:00 DEBUG 5980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
-2024-01-18T14:02:52.530-05:00 TRACE 5980 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#createBiere(Biere)
-2024-01-18T14:02:52.533-05:00 TRACE 5980 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#createBiere(Biere)
-2024-01-18T14:02:52.534-05:00 TRACE 5980 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#createBiere(Biere)
-2024-01-18T14:02:52.535-05:00 TRACE 5980 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#createBiere(Biere)
-2024-01-18T14:02:52.538-05:00 TRACE 5980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/add/biere", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
-2024-01-18T14:02:52.539-05:00 TRACE 5980 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#createBiere(Biere)
-2024-01-18T14:02:52.588-05:00 TRACE 5980 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.confrerie.confrerie.model.Biere@1b19f32f]
-2024-01-18T14:02:52.591-05:00 TRACE 5980 --- [http-nio-8080-exec-1] o.s.web.method.HandlerMethod             : Arguments: [com.confrerie.confrerie.model.Biere@1b19f32f]
-2024-01-18T14:02:52.738-05:00 DEBUG 5980 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-01-18T14:02:52.739-05:00 TRACE 5980 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@1b19f32f]
-2024-01-18T14:02:52.744-05:00 TRACE 5980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
-2024-01-18T14:02:52.745-05:00 DEBUG 5980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
-2024-01-18T14:08:27.216-05:00 TRACE 5980 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:08:27.220-05:00 TRACE 5980 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:08:27.221-05:00 TRACE 5980 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:08:27.248-05:00 TRACE 5980 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:08:27.248-05:00 TRACE 5980 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:08:27.249-05:00 TRACE 5980 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:08:27.250-05:00 TRACE 5980 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:08:27.250-05:00 TRACE 5980 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:08:27.251-05:00 TRACE 5980 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:08:27.251-05:00 TRACE 5980 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:08:27.252-05:00 TRACE 5980 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:08:38.632-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:08:38.634-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:08:38.638-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:08:38.643-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:08:38.644-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:08:38.645-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:08:38.645-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:08:38.647-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:08:38.648-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:08:38.651-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:08:38.651-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:08:59.527-05:00 TRACE 5980 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:08:59.529-05:00 TRACE 5980 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:08:59.533-05:00 TRACE 5980 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:08:59.537-05:00 TRACE 5980 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:08:59.538-05:00 TRACE 5980 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:08:59.540-05:00 TRACE 5980 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:08:59.542-05:00 TRACE 5980 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:08:59.543-05:00 TRACE 5980 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:08:59.543-05:00 TRACE 5980 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:08:59.545-05:00 TRACE 5980 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:08:59.545-05:00 TRACE 5980 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:09:01.131-05:00 TRACE 5980 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:09:01.136-05:00 TRACE 5980 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:09:01.138-05:00 TRACE 5980 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:09:01.140-05:00 TRACE 5980 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:09:01.141-05:00 TRACE 5980 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:09:01.142-05:00 TRACE 5980 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:09:01.143-05:00 TRACE 5980 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:09:01.144-05:00 TRACE 5980 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:09:01.145-05:00 TRACE 5980 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:09:01.146-05:00 TRACE 5980 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:09:01.149-05:00 TRACE 5980 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:09:11.091-05:00 TRACE 5980 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:09:11.093-05:00 TRACE 5980 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:09:11.094-05:00 TRACE 5980 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:09:11.095-05:00 TRACE 5980 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : DELETE "/delete/biere/6", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
-2024-01-18T14:09:11.095-05:00 TRACE 5980 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#deleteBiere(long)
-2024-01-18T14:09:11.096-05:00 TRACE 5980 --- [http-nio-8080-exec-6] o.s.web.method.HandlerMethod             : Arguments: [6]
-2024-01-18T14:09:11.111-05:00 DEBUG 5980 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-01-18T14:09:11.112-05:00 TRACE 5980 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [200 OK]
-2024-01-18T14:09:11.113-05:00 TRACE 5980 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
-2024-01-18T14:09:11.114-05:00 DEBUG 5980 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
-2024-01-18T14:13:04.776-05:00 TRACE 5980 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getAllBiere()
-2024-01-18T14:13:04.777-05:00 TRACE 5980 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/bieres", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
-2024-01-18T14:13:04.779-05:00 TRACE 5980 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getAllBiere()
-2024-01-18T14:13:04.780-05:00 TRACE 5980 --- [http-nio-8080-exec-10] o.s.web.method.HandlerMethod             : Arguments: []
-2024-01-18T14:13:04.899-05:00 DEBUG 5980 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-01-18T14:13:04.900-05:00 TRACE 5980 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.confrerie.confrerie.model.Biere@494ba343, com.confrerie.confrerie.model.Biere@4a56f1b3, com.confrerie.confrerie.model.Biere@4995dfb0, com.confrerie.confrerie.model.Biere@6facc714, com.confrerie.confrerie.model.Biere@7be92019, com.confrerie.confrerie.model.Biere@64f9dbe, com.confrerie.confrerie.model.Biere@6140aa98, com.confrerie.confrerie.model.Biere@68dd55c3, com.confrerie.confrerie.model.Biere@5a065929, com.confrerie.confrerie.model.Biere@20de9dba, com.confrerie.confrerie.model.Biere@44aee753, com.confrerie.confrerie.model.Biere@465fd148, com.confrerie.confrerie.model.Biere@2ef817bb, com.confrerie.confrerie.model.Biere@7a1f7c93, com.confrerie.confrerie.model.Biere@49b898fc, com.confrerie.confrerie.model.Biere@7155d512, com.confrerie.confrerie.model.Biere@1f7e514c, com.confrerie.confrerie.model.Biere@1e044dd4, com.confrerie.confrerie.model.Biere@13f65990, com.confrerie.confrerie.model.Biere@4cd4e3b9, com.confrerie.confrerie.model.Biere@21cd3f5e, com.confrerie.confrerie.model.Biere@1d1bbc5e, com.confrerie.confrerie.model.Biere@3c804cb4]]
-2024-01-18T14:13:04.906-05:00 TRACE 5980 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
-2024-01-18T14:13:04.907-05:00 DEBUG 5980 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
-2024-01-18T14:13:19.658-05:00 TRACE 5980 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getAllBiere()
-2024-01-18T14:13:19.663-05:00 TRACE 5980 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/bieres", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
-2024-01-18T14:13:19.666-05:00 TRACE 5980 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getAllBiere()
-2024-01-18T14:13:19.669-05:00 TRACE 5980 --- [http-nio-8080-exec-8] o.s.web.method.HandlerMethod             : Arguments: []
-2024-01-18T14:13:19.688-05:00 DEBUG 5980 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-01-18T14:13:19.688-05:00 TRACE 5980 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.confrerie.confrerie.model.Biere@4a3ae8fa, com.confrerie.confrerie.model.Biere@ccab538, com.confrerie.confrerie.model.Biere@c7bfd2f, com.confrerie.confrerie.model.Biere@4c5e1d70, com.confrerie.confrerie.model.Biere@513e4139, com.confrerie.confrerie.model.Biere@8844d53, com.confrerie.confrerie.model.Biere@5bc55be9, com.confrerie.confrerie.model.Biere@674c687c, com.confrerie.confrerie.model.Biere@4458ca25, com.confrerie.confrerie.model.Biere@6e9ce928, com.confrerie.confrerie.model.Biere@1f77fd01, com.confrerie.confrerie.model.Biere@1bfc791b, com.confrerie.confrerie.model.Biere@19f781a3, com.confrerie.confrerie.model.Biere@102bee1c, com.confrerie.confrerie.model.Biere@301496ed, com.confrerie.confrerie.model.Biere@48580555, com.confrerie.confrerie.model.Biere@6d876f64, com.confrerie.confrerie.model.Biere@221337c6, com.confrerie.confrerie.model.Biere@36247e97, com.confrerie.confrerie.model.Biere@3edea7ab, com.confrerie.confrerie.model.Biere@6874035b, com.confrerie.confrerie.model.Biere@53e2b494, com.confrerie.confrerie.model.Biere@4627b8b9]]
-2024-01-18T14:13:19.693-05:00 TRACE 5980 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
-2024-01-18T14:13:19.693-05:00 DEBUG 5980 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
-2024-01-18T14:19:48.887-05:00 TRACE 5980 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:19:48.888-05:00 TRACE 5980 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:19:48.891-05:00 TRACE 5980 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:19:48.892-05:00 TRACE 5980 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:19:48.895-05:00 TRACE 5980 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:19:48.899-05:00 TRACE 5980 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:19:48.903-05:00 TRACE 5980 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:19:48.904-05:00 TRACE 5980 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:19:55.902-05:00 TRACE 5980 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#createBiere(Biere)
-2024-01-18T14:19:55.903-05:00 TRACE 5980 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#createBiere(Biere)
-2024-01-18T14:19:55.905-05:00 TRACE 5980 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#createBiere(Biere)
-2024-01-18T14:19:55.906-05:00 TRACE 5980 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#createBiere(Biere)
-2024-01-18T14:19:55.906-05:00 TRACE 5980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/add/biere", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
-2024-01-18T14:19:55.907-05:00 TRACE 5980 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#createBiere(Biere)
-2024-01-18T14:19:55.910-05:00 TRACE 5980 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.confrerie.confrerie.model.Biere@79174f4b]
-2024-01-18T14:19:55.910-05:00 TRACE 5980 --- [http-nio-8080-exec-2] o.s.web.method.HandlerMethod             : Arguments: [com.confrerie.confrerie.model.Biere@79174f4b]
-2024-01-18T14:19:55.933-05:00 DEBUG 5980 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-01-18T14:19:55.934-05:00 TRACE 5980 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@720461cd]
-2024-01-18T14:19:55.936-05:00 TRACE 5980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
-2024-01-18T14:19:55.937-05:00 DEBUG 5980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
-2024-01-18T14:21:00.293-05:00 TRACE 5980 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#createBiere(Biere)
-2024-01-18T14:21:00.294-05:00 TRACE 5980 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#createBiere(Biere)
-2024-01-18T14:21:00.296-05:00 TRACE 5980 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#createBiere(Biere)
-2024-01-18T14:21:00.296-05:00 TRACE 5980 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#createBiere(Biere)
-2024-01-18T14:21:00.297-05:00 TRACE 5980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/add/biere", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
-2024-01-18T14:21:00.297-05:00 TRACE 5980 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#createBiere(Biere)
-2024-01-18T14:21:00.299-05:00 TRACE 5980 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.confrerie.confrerie.model.Biere@6a21830a]
-2024-01-18T14:21:00.299-05:00 TRACE 5980 --- [http-nio-8080-exec-1] o.s.web.method.HandlerMethod             : Arguments: [com.confrerie.confrerie.model.Biere@6a21830a]
-2024-01-18T14:21:00.311-05:00 DEBUG 5980 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-01-18T14:21:00.311-05:00 TRACE 5980 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@5a1a7808]
-2024-01-18T14:21:00.313-05:00 TRACE 5980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
-2024-01-18T14:21:00.313-05:00 DEBUG 5980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
-2024-01-18T14:22:25.296-05:00 TRACE 5980 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#updateBiere(long, Biere)
-2024-01-18T14:22:25.297-05:00 TRACE 5980 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#updateBiere(long, Biere)
-2024-01-18T14:22:25.298-05:00 TRACE 5980 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#updateBiere(long, Biere)
-2024-01-18T14:22:25.299-05:00 TRACE 5980 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#updateBiere(long, Biere)
-2024-01-18T14:22:25.300-05:00 TRACE 5980 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : PUT "/modify/biere/152", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
-2024-01-18T14:22:25.300-05:00 TRACE 5980 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#updateBiere(long, Biere)
-2024-01-18T14:22:25.303-05:00 TRACE 5980 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.confrerie.confrerie.model.Biere@432dc5a7]
-2024-01-18T14:22:25.304-05:00 TRACE 5980 --- [http-nio-8080-exec-5] o.s.web.method.HandlerMethod             : Arguments: [152, com.confrerie.confrerie.model.Biere@432dc5a7]
-2024-01-18T14:22:25.325-05:00 DEBUG 5980 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-01-18T14:22:25.325-05:00 TRACE 5980 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@25d6903e]
-2024-01-18T14:22:25.327-05:00 TRACE 5980 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
-2024-01-18T14:22:25.328-05:00 DEBUG 5980 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
-2024-01-18T14:22:38.270-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#updateBiere(long, Biere)
-2024-01-18T14:22:38.273-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#updateBiere(long, Biere)
-2024-01-18T14:22:38.276-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#updateBiere(long, Biere)
-2024-01-18T14:22:38.278-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#updateBiere(long, Biere)
-2024-01-18T14:22:38.283-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:22:38.285-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:22:38.286-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:22:38.287-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:22:38.288-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:22:38.288-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:22:38.289-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
-2024-01-18T14:22:38.290-05:00 TRACE 5980 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2024-01-18T14:35:21.236-05:00  INFO 5980 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-18T14:35:21.236-05:00  INFO 5980 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-18T14:35:21.236-05:00  INFO 5980 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-12T09:45:23.859+01:00 DEBUG 812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2024-02-12T09:45:23.870+01:00 DEBUG 812 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2024-02-12T09:45:24.030+01:00 TRACE 812 --- [main] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'routerFunctionMapping'
+2024-02-12T09:45:24.048+01:00 TRACE 812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-02-12T09:45:24.049+01:00 TRACE 812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-02-12T09:45:24.050+01:00 DEBUG 812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-02-12T09:45:24.180+01:00  INFO 812 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@202ba60a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12ebcdf6, org.springframework.security.web.context.SecurityContextHolderFilter@69ee0861, org.springframework.security.web.header.HeaderWriterFilter@4a0fc665, org.springframework.web.filter.CorsFilter@30dd23e2, org.springframework.security.web.authentication.logout.LogoutFilter@511ad0dd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@43d2c8e3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69f55ea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25fc2b8f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@88fc9cb, org.springframework.security.web.access.ExceptionTranslationFilter@37f0fb02, org.springframework.security.web.access.intercept.AuthorizationFilter@524b1e41]
+2024-02-12T09:45:24.291+01:00 DEBUG 812 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-02-12T09:45:24.365+01:00 DEBUG 812 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-02-12T09:45:24.427+01:00 DEBUG 812 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-02-12T09:45:24.812+01:00  INFO 812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-12T09:45:24.825+01:00  INFO 812 --- [main] c.c.confrerie.ConfrerieApplication       : Started ConfrerieApplication in 13.417 seconds (process running for 14.453)
+2024-02-12T10:04:07.076+01:00  INFO 812 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-12T10:04:07.078+01:00  INFO 812 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-12T10:04:07.079+01:00 TRACE 812 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@686ace1f
+2024-02-12T10:04:07.080+01:00 TRACE 812 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@1d208795
+2024-02-12T10:04:07.081+01:00 TRACE 812 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.theme.FixedThemeResolver@27244a88
+2024-02-12T10:04:07.083+01:00 TRACE 812 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected DefaultRequestToViewNameTranslator
+2024-02-12T10:04:07.084+01:00 TRACE 812 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected SessionFlashMapManager
+2024-02-12T10:04:07.085+01:00 DEBUG 812 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-02-12T10:04:07.085+01:00  INFO 812 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2024-02-12T10:04:07.123+01:00 TRACE 812 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2024-02-12T10:04:07.145+01:00 TRACE 812 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2024-02-12T10:04:07.147+01:00 TRACE 812 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2024-02-12T10:04:07.150+01:00 TRACE 812 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/biere/13", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-02-12T10:04:07.152+01:00 TRACE 812 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.confrerie.confrerie.controller.BiereController#getBiereById(long)
+2024-02-12T10:04:07.154+01:00 TRACE 812 --- [http-nio-8080-exec-2] o.s.web.cors.DefaultCorsProcessor        : Skip: response already contains "Access-Control-Allow-Origin"
+2024-02-12T10:04:07.178+01:00 TRACE 812 --- [http-nio-8080-exec-2] o.s.web.method.HandlerMethod             : Arguments: [13]
+2024-02-12T10:04:07.481+01:00 DEBUG 812 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2024-02-12T10:04:07.484+01:00 TRACE 812 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.confrerie.confrerie.model.Biere@4306fb9c]
+2024-02-12T10:04:07.511+01:00 TRACE 812 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2024-02-12T10:04:07.516+01:00 DEBUG 812 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
