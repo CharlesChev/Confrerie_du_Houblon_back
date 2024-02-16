@@ -22,6 +22,7 @@ public class SecurityConfig {
         http.authorizeHttpRequests(requests -> requests
                 .requestMatchers("/bieres").permitAll()
                 .requestMatchers("/biere/**").permitAll()
+                .requestMatchers("/upload").hasRole("ADMIN")
                 .requestMatchers("/delete/biere/**").hasRole("ADMIN")
                 .requestMatchers("/**").hasRole("ADMIN")
                 .anyRequest().authenticated()).httpBasic(Customizer.withDefaults()).cors(Customizer.withDefaults())
