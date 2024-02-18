@@ -23,7 +23,7 @@ public class SecurityConfig {
                 .requestMatchers("/bieres").permitAll()
                 .requestMatchers("/biere/**").permitAll()
                 .requestMatchers("/upload").hasRole("ADMIN")
-                .requestMatchers("/delete/biere/**").hasRole("ADMIN")
+                .requestMatchers("/delete/**").hasRole("ADMIN")
                 .requestMatchers("/**").hasRole("ADMIN")
                 .anyRequest().authenticated()).httpBasic(Customizer.withDefaults()).cors(Customizer.withDefaults())
                 .logout(logout -> logout

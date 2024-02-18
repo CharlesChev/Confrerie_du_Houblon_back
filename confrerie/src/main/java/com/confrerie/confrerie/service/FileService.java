@@ -12,7 +12,9 @@ import org.springframework.web.multipart.MultipartFile;
 @Service
 public class FileService {
 
-    private final Path root = Paths.get("C:/Users/CharlesTravail/projets/projet_pers/confrerie_de_la_biere/front/confrerie/src/assets");
+    private String basePath ="C:/Users/CharlesTravail/projets/projet_pers/confrerie_de_la_biere/front/confrerie/src/assets";
+
+    private final Path root = Paths.get(basePath);
 
     public void init() {
         try {
@@ -31,6 +33,16 @@ public class FileService {
             }
 
             throw new RuntimeException(e.getMessage());
+        }
+    }
+
+    public void deleteFile(String fileName) {
+        Path filePath = Paths.get(basePath, fileName);
+
+        try {
+            Files.delete(filePath);
+        } catch (IOException e) {
+            e.printStackTrace(); // 
         }
     }
 
