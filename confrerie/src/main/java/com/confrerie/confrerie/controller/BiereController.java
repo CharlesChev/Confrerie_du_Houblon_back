@@ -19,7 +19,7 @@ import com.confrerie.confrerie.model.Biere;
 import com.confrerie.confrerie.service.BiereService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://51.222.9.109:8080")
 public class BiereController {
 
     @Autowired

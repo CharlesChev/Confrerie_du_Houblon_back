@@ -14,7 +14,7 @@ import org.springframework.web.multipart.MultipartFile;
 import com.confrerie.confrerie.service.FileService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://51.222.9.109:8080")
 public class FileController {
 
     @Autowired

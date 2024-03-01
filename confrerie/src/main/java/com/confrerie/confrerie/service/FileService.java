@@ -12,7 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
 @Service
 public class FileService {
 
-    private String basePath ="C:/Users/CharlesTravail/projets/projet_pers/confrerie_de_la_biere/front/confrerie/src/assets";
+    private String basePath ="/var/lib/tomcat9/webapps/confrerie/assets";
 
     private final Path root = Paths.get(basePath);
 
