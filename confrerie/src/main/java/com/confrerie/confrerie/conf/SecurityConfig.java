@@ -11,6 +11,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.core.userdetails.User;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+
 
 
 @Configuration
@@ -20,11 +22,12 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(requests -> requests
-                .requestMatchers("/bieres").permitAll()
-                .requestMatchers("/biere/**").permitAll()
-                .requestMatchers("/upload").hasRole("ADMIN")
-                .requestMatchers("/delete/**").hasRole("ADMIN")
-                .requestMatchers("/**").hasRole("ADMIN")
+                .requestMatchers(AntPathRequestMatcher.antMatcher("/")).permitAll()
+                .requestMatchers(AntPathRequestMatcher.antMatcher("/bieres")).permitAll()
+                .requestMatchers(AntPathRequestMatcher.antMatcher("/biere/**")).permitAll()
+                .requestMatchers(AntPathRequestMatcher.antMatcher("/upload")).hasRole("ADMIN")
+                .requestMatchers(AntPathRequestMatcher.antMatcher("/delete/**")).hasRole("ADMIN")
+                .requestMatchers(AntPathRequestMatcher.antMatcher("/**")).hasRole("ADMIN")
                 .anyRequest().authenticated()).httpBasic(Customizer.withDefaults()).cors(Customizer.withDefaults())
                 .logout(logout -> logout
                         .permitAll()).csrf(AbstractHttpConfigurer::disable);
