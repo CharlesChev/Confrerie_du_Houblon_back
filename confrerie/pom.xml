@@ -84,7 +84,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>conf</finalName>
+		<finalName>confrerie-back</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
